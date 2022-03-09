@@ -1,0 +1,8 @@
+{
+    "projectManager.git.ignoredFolders": [
+        "typings",
+        "test",
+        ".haxelib",
+        "nod_modules"
+    ]
+}
