@@ -47,13 +47,12 @@ app.get('/survey', function(req,res){
     res.sendFile(path.join(__dirname, "./app/public/survey.html"));
 });
 app.get('/images/:image', function(req,res){
-    res.sendFile(path.join(__dirname, `./app/publicmatchPhotos/${req.params.image}`));
+    res.sendFile(path.join(__dirname, `./app/public/matcPhotos/${req.params.image}`));
 });
 app.get('/css/:css',function(req,res){
     res.sendFile(path.join(__dirname, `./app/public/css/${req.params.css}`));
 });
 app.get('/javascript/:javascript',function(req,res){
-    res.sendFile(path.join(__dirname, `./app/public/javascript/${req.param.javascript}`));
 });
 app.get('*',function(req,res){
     res.sendFile(path.join(__dirname, "./app/public/index.html"));
